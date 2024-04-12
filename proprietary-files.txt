@@ -1,6 +1,76 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from V405EBW30g (QKQ1.191222.002).
 
+# ADSP
+vendor/bin/chre
+vendor/lib/libfastcrc.so
+vendor/lib/libfastcvdsp_stub.so
+vendor/lib/libsymphony-1.1.4.so
+vendor/lib/libsymphony-cpu.so
+vendor/lib/libsymphonypower-1.1.4.so
+vendor/lib/libsymphonypower.so
+vendor/lib64/libfastcvdsp_stub.so
+vendor/lib64/libsymphony-1.1.4.so
+vendor/lib64/libsymphony-cpu.so
+vendor/lib64/libsymphonypower-1.1.4.so
+vendor/lib64/libsymphonypower.so
+
+# ADSP (Modules)
+vendor/lib/rfsa/adsp/activity.so
+vendor/lib/rfsa/adsp/AlacDecoderModule.so.1
+vendor/lib/rfsa/adsp/ApeDecoderModule.so.1
+vendor/lib/rfsa/adsp/AudioContextDetection.so.1
+vendor/lib/rfsa/adsp/AudioSphereModule.so.1
+vendor/lib/rfsa/adsp/cellinfo_tools.so
+vendor/lib/rfsa/adsp/CFCMModule.so.1
+vendor/lib/rfsa/adsp/chre_drv_bt.so
+vendor/lib/rfsa/adsp/chre_drv_gf.so
+vendor/lib/rfsa/adsp/chre_drv_loc.so
+vendor/lib/rfsa/adsp/chre_drv_modem.so
+vendor/lib/rfsa/adsp/chre_drv_wifi.so
+vendor/lib/rfsa/adsp/chre_pal.so
+vendor/lib/rfsa/adsp/EtsiAmrWbPlusDecModule.so.1
+vendor/lib/rfsa/adsp/EtsiEaacPlusEncAndCmnModule.so.1
+vendor/lib/rfsa/adsp/fastrpc_shell_0
+vendor/lib/rfsa/adsp/FlacDecoderModule.so.1
+vendor/lib/rfsa/adsp/fluence_voiceplus_module.so.1
+vendor/lib/rfsa/adsp/geofence.so
+vendor/lib/rfsa/adsp/HeaacDecoderModule.so.1
+vendor/lib/rfsa/adsp/LdacModule.so.1
+vendor/lib/rfsa/adsp/lg_nanoapp_pa.so
+vendor/lib/rfsa/adsp/lg_nanoapp_sbd.so
+vendor/lib/rfsa/adsp/lg_nanoapp_su.so
+vendor/lib/rfsa/adsp/libapps_mem_heap.so
+vendor/lib/rfsa/adsp/libcamera_nn_skel.so
+vendor/lib/rfsa/adsp/libchre_slpi_skel.so
+vendor/lib/rfsa/adsp/libcvpdsp_skel.so
+vendor/lib/rfsa/adsp/libdspCV_skel.so
+vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so
+vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
+vendor/lib/rfsa/adsp/libdsp_streamer_skel.so
+vendor/lib/rfsa/adsp/libfastcvadsp.so
+vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
+vendor/lib/rfsa/adsp/libscveT2T_skel.so
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib/rfsa/adsp/libstabilitydomain_skel.so
+vendor/lib/rfsa/adsp/libsysmondomain_skel.so
+vendor/lib/rfsa/adsp/libsysmon_skel.so
+vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
+vendor/lib/rfsa/adsp/libVC1Dec.so
+vendor/lib/rfsa/adsp/lowi_client.so
+vendor/lib/rfsa/adsp/mmecns_module.so.1
+vendor/lib/rfsa/adsp/SAPlusCmnModule.so.1
+vendor/lib/rfsa/adsp/SVACmnModule.so.1
+vendor/lib/rfsa/adsp/VoiceWakeup_V2_Module.so.1
+vendor/lib/rfsa/adsp/VorbisDecoderModule.so.1
+vendor/lib/rfsa/adsp/WmaProDecoderModule.so.1
+vendor/lib/rfsa/adsp/WmaStdDecoderModule.so.1
+
 # Audio
 vendor/etc/acdbdata/Bluetooth_cal.acdb
 vendor/etc/acdbdata/Codec_cal.acdb
@@ -221,121 +291,6 @@ vendor/lib/camera/com.qti.tuned.sl556_tmus.bin
 vendor/lib/camera/com.qti.tuned.sl846.bin
 vendor/lib/camera/com.qti.tuned.sl846_tmus.bin
 
-# Crypto
-vendor/lib64/libcpion.so
-vendor/lib64/libfpfactory-impl.so
-vendor/lib64/libGPQTEEC_vendor.so
-vendor/lib64/libhdcp1prov.so
-vendor/lib64/libhdcp2p2prov.so
-vendor/lib64/libhdcpsrm.so
-vendor/lib64/liblgefido_hal_impl.so
-vendor/lib64/libLgeVendorFeatures2.so
-vendor/lib64/liblgftmitem_vendor.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/liboemcrypto.so
-vendor/lib64/libpvr.so
-vendor/lib64/librmp.so
-vendor/lib64/libsi.so
-vendor/lib64/libunified_sysfs_vendor.so
-vendor/lib/libatd_modeminterface.so
-vendor/lib/libbluedroid_bdt.so
-vendor/lib/libcpion.so
-vendor/lib/libfpfactory-impl.so
-vendor/lib/libGPQTEEC_vendor.so
-vendor/lib/libhdcp1prov.so
-vendor/lib/libhdcp2p2prov.so
-vendor/lib/libhdcpsrm.so
-vendor/lib/liblgefido_hal_impl.so
-vendor/lib/liblgehdcpek.so
-vendor/lib/libLgeVendorFeatures2.so
-vendor/lib/liblgftmitem_vendor.so
-vendor/lib/libmdsprpc.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libpvr.so
-vendor/lib/librmp.so
-vendor/lib/libsi.so
-vendor/lib/libunified_sysfs_vendor.so
-vendor/lib/libwvoemprov.so
-vendor/lib/vendor.lge.hardware.filehandle@1.0.so
-
-# DRM
-product/lib/vendor.qti.hardware.qseecom@1.0.so
-product/lib64/vendor.qti.hardware.qseecom@1.0.so
-vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
-vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
-vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
-vendor/lib/vendor.qti.hardware.qseecom@1.0.so
-
-# DSP
-vendor/bin/chre
-vendor/lib/libfastcrc.so
-vendor/lib/libfastcvdsp_stub.so
-vendor/lib/libsymphony-1.1.4.so
-vendor/lib/libsymphony-cpu.so
-vendor/lib/libsymphonypower-1.1.4.so
-vendor/lib/libsymphonypower.so
-vendor/lib/rfsa/adsp/activity.so
-vendor/lib/rfsa/adsp/AlacDecoderModule.so.1
-vendor/lib/rfsa/adsp/ApeDecoderModule.so.1
-vendor/lib/rfsa/adsp/AudioContextDetection.so.1
-vendor/lib/rfsa/adsp/AudioSphereModule.so.1
-vendor/lib/rfsa/adsp/cellinfo_tools.so
-vendor/lib/rfsa/adsp/CFCMModule.so.1
-vendor/lib/rfsa/adsp/chre_drv_bt.so
-vendor/lib/rfsa/adsp/chre_drv_gf.so
-vendor/lib/rfsa/adsp/chre_drv_loc.so
-vendor/lib/rfsa/adsp/chre_drv_modem.so
-vendor/lib/rfsa/adsp/chre_drv_wifi.so
-vendor/lib/rfsa/adsp/chre_pal.so
-vendor/lib/rfsa/adsp/EtsiAmrWbPlusDecModule.so.1
-vendor/lib/rfsa/adsp/EtsiEaacPlusEncAndCmnModule.so.1
-vendor/lib/rfsa/adsp/fastrpc_shell_0
-vendor/lib/rfsa/adsp/FlacDecoderModule.so.1
-vendor/lib/rfsa/adsp/fluence_voiceplus_module.so.1
-vendor/lib/rfsa/adsp/geofence.so
-vendor/lib/rfsa/adsp/HeaacDecoderModule.so.1
-vendor/lib/rfsa/adsp/LdacModule.so.1
-vendor/lib/rfsa/adsp/lg_nanoapp_pa.so
-vendor/lib/rfsa/adsp/lg_nanoapp_sbd.so
-vendor/lib/rfsa/adsp/lg_nanoapp_su.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libcamera_nn_skel.so
-vendor/lib/rfsa/adsp/libchre_slpi_skel.so
-vendor/lib/rfsa/adsp/libcvpdsp_skel.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so
-vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
-vendor/lib/rfsa/adsp/libdsp_streamer_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so
-vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
-vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib/rfsa/adsp/libstabilitydomain_skel.so
-vendor/lib/rfsa/adsp/libsysmondomain_skel.so
-vendor/lib/rfsa/adsp/libsysmon_skel.so
-vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
-vendor/lib/rfsa/adsp/libVC1Dec.so
-vendor/lib/rfsa/adsp/lowi_client.so
-vendor/lib/rfsa/adsp/mmecns_module.so.1
-vendor/lib/rfsa/adsp/SAPlusCmnModule.so.1
-vendor/lib/rfsa/adsp/SVACmnModule.so.1
-vendor/lib/rfsa/adsp/VoiceWakeup_V2_Module.so.1
-vendor/lib/rfsa/adsp/VorbisDecoderModule.so.1
-vendor/lib/rfsa/adsp/WmaProDecoderModule.so.1
-vendor/lib/rfsa/adsp/WmaStdDecoderModule.so.1
-vendor/lib64/libfastcvdsp_stub.so
-vendor/lib64/libsymphony-1.1.4.so
-vendor/lib64/libsymphony-cpu.so
-vendor/lib64/libsymphonypower-1.1.4.so
-vendor/lib64/libsymphonypower.so
-
 # Fingerprint
 vendor/lib64/hw/fingerprint.sdm845.so
 vendor/lib64/libgf_hal.so
@@ -343,8 +298,6 @@ vendor/lib64/libgf_algo.so
 vendor/lib/hw/fingerprint.sdm845.so
 vendor/lib/libgf_hal.so
 vendor/lib/libgf_algo.so
-vendor/usr/idc/goodix_fp_key.idc
-vendor/usr/keylayout/goodix_fp_key.kl
 
 # Firmware (Audio)
 vendor/firmware/Tfa9872.cnt
@@ -393,44 +346,14 @@ vendor/etc/wifi/NA_ALL/bdwlan.bin
 vendor/etc/wifi/NA_ALL/bdwlan_ch0.bin
 vendor/etc/wifi/NA_ALL/bdwlan_ch1.bin
 
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+# IDC and Keylayout
+vendor/usr/idc/goodix_fp_key.idc
+vendor/usr/keylayout/goodix_fp_key.kl
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
-vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterutils.so
-vendor/lib/libqtikeymaster4.so
-
-# Peripheral manager
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib64/libperipheral_client.so
-vendor/lib64/libspcom.so
-vendor/lib/libperipheral_client.so
-vendor/lib/libspcom.so
 
 # QDCM calibration data
-vendor/etc/qdcm_calib_data_Dual_nt35597_cmd_mode_dsi_truly_panel_without_DSC.xml
-vendor/etc/qdcm_calib_data_Dual_nt35597_video_mode_dsi_truly_panel_without_DSC.xml
-vendor/etc/qdcm_calib_data_Dual_nt36850_cmd_mode_dsi_truly_panel_without_DSC.xml
-vendor/etc/qdcm_calib_data_hx8399_video_mode_dsi_truly_panel.xml
-vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_SW43408A_cmd_mode_dsc_dsi_panel.xml
 
 # SCVE
