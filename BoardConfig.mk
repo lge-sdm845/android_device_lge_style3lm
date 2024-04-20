@@ -16,8 +16,8 @@
 
 DEVICE_PATH := device/lge/judypn
 
-# inherit from common v30
--include device/lge/sdm845-common/BoardConfigCommon.mk
+# Inherit from common device tree
+include device/lge/sdm845-common/BoardConfigCommon.mk
 
 # Camera
 TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
