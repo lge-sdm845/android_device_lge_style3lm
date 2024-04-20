@@ -2,6 +2,9 @@
 # vendor props for judypn
 #
 
+# Bluetooth
+bluetooth.device.default_name=LG V40 ThinQ
+
 # Camera
 ro.vendor.lge.aux.camera=2
 vendor.lge.faceprint.use.camera=0
