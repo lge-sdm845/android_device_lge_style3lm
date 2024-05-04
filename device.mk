@@ -59,5 +59,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/recovery/root/init.recovery.judypn.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.judypn.rc
 
+# Wi-Fi Overlay
+PRODUCT_PACKAGES += \
+    WifiOverlayV40
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/lge/judypn/judypn-vendor.mk)
