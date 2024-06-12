@@ -49,10 +49,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
 	$(DEVICE_PATH)
 
-# Recovery
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/recovery/root/init.recovery.judypn.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.judypn.rc
-
 # Wi-Fi Overlay
 PRODUCT_PACKAGES += \
     WifiOverlayV40
