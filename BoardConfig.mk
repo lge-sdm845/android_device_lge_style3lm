@@ -14,17 +14,14 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lge/judypn
+DEVICE_PATH := device/lge/caymanslm
 
 # Inherit from common device tree
 include device/lge/sdm845-common/BoardConfigCommon.mk
 
-# Camera
-TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
-
 # Kernel
-BOARD_KERNEL_CMDLINE += androidboot.hardware=judypn androidboot.fstab_suffix=judypn
-TARGET_KERNEL_CONFIG := lineageos_judypn_defconfig
+BOARD_KERNEL_CMDLINE += androidboot.hardware=caymanslm androidboot.fstab_suffix=caymanslm
+TARGET_KERNEL_CONFIG := lineageos_caymanslm_defconfig
 
 # Lights
 $(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,$(DEVICE_PATH)/include)
@@ -34,4 +31,4 @@ BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
 
 # inherit from the proprietary version
-include vendor/lge/judypn/BoardConfigVendor.mk
+include vendor/lge/caymanslm/BoardConfigVendor.mk

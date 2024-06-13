@@ -8,7 +8,7 @@
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib/liblgsnpeawb.so|vendor/lib/libSNPE.so)
+        vendor/lib/liblgdnnsnpe.so|vendor/lib/libSNPE.so)
 	    "${PATCHELF_0_17_2}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
 	    ;;
     esac
@@ -22,7 +22,7 @@ fi
 
 set -e
 
-export DEVICE=judypn
+export DEVICE=caymanslm
 export DEVICE_COMMON=sdm845-common
 export VENDOR=lge
 export VENDOR_COMMON=${VENDOR}

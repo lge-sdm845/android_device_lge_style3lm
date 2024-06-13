@@ -1,20 +1,18 @@
 #
-# vendor props for judypn
+# vendor props for caymanslm
 #
 
 # Bluetooth
-bluetooth.device.default_name=LG V40 ThinQ
+bluetooth.device.default_name=LG VELVET
 
 # Camera
-ro.vendor.lge.aux.camera=2
-vendor.lge.faceprint.use.camera=0
-vendor.camera.aux.physical=5
+ro.vendor.lge.aux.camera=1
 
 # Misc
 ro.vendor.lge.build.target_country=COM
 ro.vendor.lge.build.target_operator=LAO
-ro.vendor.lge.capp_cupss.rootdir=/oem/OP
-ro.vendor.lge.swversion=V40530g
+ro.vendor.lge.capp_cupss.rootdir=/product
+ro.vendor.lge.swversion=G91030l
 
 # USB
-vendor.usb.product_string=LG V40 ThinQ
+vendor.usb.product_string=LG VELVET

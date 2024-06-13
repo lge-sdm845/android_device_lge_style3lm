@@ -19,8 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Include from common device configuration
 $(call inherit-product, device/lge/sdm845-common/sdm845.mk)
 
-DEVICE_PATH := device/lge/judypn
-DEVICE_NAME := judypn
+DEVICE_PATH := device/lge/caymanslm
+DEVICE_NAME := caymanslm
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -45,12 +45,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.hifi_sensors.xml
 
+# Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
 	$(DEVICE_PATH)
 
 # Wi-Fi Overlay
 PRODUCT_PACKAGES += \
-    WifiOverlayV40
+    WifiOverlayVELVET
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/lge/judypn/judypn-vendor.mk)
+$(call inherit-product, vendor/lge/caymanslm/caymanslm-vendor.mk)
