@@ -49,6 +49,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
 	$(DEVICE_PATH)
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.0-service.multihal
+
 # Wi-Fi Overlay
 PRODUCT_PACKAGES += \
     WifiOverlayVELVET
