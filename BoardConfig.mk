@@ -34,8 +34,5 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
 # Platform
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
-# Security Patch Level
-VENDOR_SECURITY_PATCH := 2020-07-01
-
 # inherit from the proprietary version
 include vendor/lge/judypn/BoardConfigVendor.mk
