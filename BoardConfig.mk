@@ -16,6 +16,9 @@
 
 DEVICE_PATH := device/lge/caymanslm
 
+# Partitions
+BOARD_SUPER_PARTITION_SIZE := 21470642176
+
 # Inherit from common device tree
 include device/lge/sdm845-common/BoardConfigCommon.mk
 
@@ -25,10 +28,6 @@ TARGET_KERNEL_CONFIG := lineageos_caymanslm_defconfig
 
 # Lights
 $(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,$(DEVICE_PATH)/include)
-
-# Partitions
-BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
-BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
 
 # inherit from the proprietary version
 include vendor/lge/caymanslm/BoardConfigVendor.mk
