@@ -25,6 +25,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter caymanslm,$(TARGET_DEVICE)),)
+ifneq ($(filter style3lm,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

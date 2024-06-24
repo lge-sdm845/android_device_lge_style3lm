@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "WifiOverlayStyle3",
+    theme: "WifiOverlayStyle3",
+    product_specific: true
+}

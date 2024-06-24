@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lge/caymanslm
+DEVICE_PATH := device/lge/style3lm
 
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 21470642176
@@ -23,11 +23,11 @@ BOARD_SUPER_PARTITION_SIZE := 21470642176
 include device/lge/sdm845-common/BoardConfigCommon.mk
 
 # Kernel
-BOARD_KERNEL_CMDLINE += androidboot.hardware=caymanslm androidboot.fstab_suffix=caymanslm
-TARGET_KERNEL_CONFIG := lineageos_caymanslm_defconfig
+BOARD_KERNEL_CMDLINE += androidboot.hardware=style3lm androidboot.fstab_suffix=style3lm
+TARGET_KERNEL_CONFIG := lineageos_style3lm_defconfig
 
 # Lights
 $(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,$(DEVICE_PATH)/include)
 
 # inherit from the proprietary version
-include vendor/lge/caymanslm/BoardConfigVendor.mk
+include vendor/lge/style3lm/BoardConfigVendor.mk

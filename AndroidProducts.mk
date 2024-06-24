@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/lineage_caymanslm.mk
+    $(LOCAL_DIR)/lineage_style3lm.mk

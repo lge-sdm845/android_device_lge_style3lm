@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from G910EMW30l (SKQ1.211103.001).
+## are from L41A10c (QKQ1.200308.002).
 
 # ADSP
 vendor/bin/chre
@@ -38,6 +38,7 @@ vendor/lib/rfsa/adsp/libVC1Dec.so
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libcamera_nn_skel.so
+vendor/lib/rfsa/adsp/libcvpdsp_skel.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so
 vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
@@ -45,6 +46,7 @@ vendor/lib/rfsa/adsp/libdsp_streamer_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
@@ -53,8 +55,6 @@ vendor/lib/rfsa/adsp/libstabilitydomain_skel.so
 vendor/lib/rfsa/adsp/libsysmon_skel.so
 vendor/lib/rfsa/adsp/libsysmondomain_skel.so
 vendor/lib/rfsa/adsp/mmecns_module.so.1
-vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
 # Audio
 vendor/etc/acdbdata/Bluetooth_cal.acdb
@@ -84,6 +84,7 @@ vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmorpho_image_stab31.so
 vendor/lib/libmorpho_superzoom.so
+vendor/lib/libmorpho_wdr2.so
 vendor/lib/libmpbase.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
@@ -96,17 +97,6 @@ vendor/lib/camera/fdconfigpreview.bin
 vendor/lib/camera/fdconfigpreviewlite.bin
 vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/fdconfigvideolite.bin
-vendor/lib/camera/liblg_aec_param_hi1634_cine_video.so
-vendor/lib/camera/liblg_aec_param_hi1634_hfr_120.so
-vendor/lib/camera/liblg_aec_param_hi1634_hfr_60.so
-vendor/lib/camera/liblg_aec_param_hi1634_out_focus.so
-vendor/lib/camera/liblg_aec_param_hi1634_out_focus_video.so
-vendor/lib/camera/liblg_aec_param_hi1634_preview.so
-vendor/lib/camera/liblg_aec_param_hi1634_sensor_hdr_auto_preview.so
-vendor/lib/camera/liblg_aec_param_hi1634_sensor_hdr_auto_video.so
-vendor/lib/camera/liblg_aec_param_hi1634_sensor_hdr_on_preview.so
-vendor/lib/camera/liblg_aec_param_hi1634_sensor_hdr_on_video.so
-vendor/lib/camera/liblg_aec_param_hi1634_video.so
 vendor/lib/camera/liblg_aec_param_s5kgm2_48M_preview.so
 vendor/lib/camera/liblg_aec_param_s5kgm2_cine_video.so
 vendor/lib/camera/liblg_aec_param_s5kgm2_hfr_120.so
@@ -124,32 +114,36 @@ vendor/lib/camera/liblg_aec_param_s5kgm2_sensor_hdr_on_preview.so
 vendor/lib/camera/liblg_aec_param_s5kgm2_sensor_hdr_on_video.so
 vendor/lib/camera/liblg_aec_param_s5kgm2_steady_cam.so
 vendor/lib/camera/liblg_aec_param_s5kgm2_video.so
+vendor/lib/camera/liblg_aec_param_sl556_cine_video.so
+vendor/lib/camera/liblg_aec_param_sl556_hfr_120.so
+vendor/lib/camera/liblg_aec_param_sl556_hfr_240.so
+vendor/lib/camera/liblg_aec_param_sl556_hfr_60.so
+vendor/lib/camera/liblg_aec_param_sl556_night_preview.so
 vendor/lib/camera/liblg_aec_param_sl556_out_focus.so
 vendor/lib/camera/liblg_aec_param_sl556_out_focus_video.so
+vendor/lib/camera/liblg_aec_param_sl556_panorama.so
 vendor/lib/camera/liblg_aec_param_sl556_preview.so
+vendor/lib/camera/liblg_aec_param_sl556_sensor_hdr_auto_preview.so
+vendor/lib/camera/liblg_aec_param_sl556_sensor_hdr_auto_video.so
+vendor/lib/camera/liblg_aec_param_sl556_sensor_hdr_on_preview.so
+vendor/lib/camera/liblg_aec_param_sl556_sensor_hdr_on_video.so
+vendor/lib/camera/liblg_aec_param_sl556_steady_cam.so
+vendor/lib/camera/liblg_aec_param_sl556_video.so
 vendor/lib/camera/liblg_aec_param_sl846_cine_video.so
-vendor/lib/camera/liblg_aec_param_sl846_hfr_120.so
-vendor/lib/camera/liblg_aec_param_sl846_hfr_240.so
-vendor/lib/camera/liblg_aec_param_sl846_hfr_60.so
-vendor/lib/camera/liblg_aec_param_sl846_night_preview.so
 vendor/lib/camera/liblg_aec_param_sl846_out_focus.so
 vendor/lib/camera/liblg_aec_param_sl846_out_focus_video.so
-vendor/lib/camera/liblg_aec_param_sl846_panorama.so
 vendor/lib/camera/liblg_aec_param_sl846_preview.so
 vendor/lib/camera/liblg_aec_param_sl846_sensor_hdr_auto_preview.so
 vendor/lib/camera/liblg_aec_param_sl846_sensor_hdr_auto_video.so
 vendor/lib/camera/liblg_aec_param_sl846_sensor_hdr_on_preview.so
 vendor/lib/camera/liblg_aec_param_sl846_sensor_hdr_on_video.so
-vendor/lib/camera/liblg_aec_param_sl846_steady_cam.so
 vendor/lib/camera/liblg_aec_param_sl846_video.so
-vendor/lib/camera/liblg_awb_param_hi1634f_preview.so
-vendor/lib/camera/liblg_awb_param_hi1634f_video.so
 vendor/lib/camera/liblg_awb_param_s5kgm2n_preview.so
 vendor/lib/camera/liblg_awb_param_s5kgm2n_video.so
-vendor/lib/camera/liblg_awb_param_sl556d_preview.so
-vendor/lib/camera/liblg_awb_param_sl556d_video.so
-vendor/lib/camera/liblg_awb_param_sl846w_preview.so
-vendor/lib/camera/liblg_awb_param_sl846w_video.so
+vendor/lib/camera/liblg_awb_param_sl556w_preview.so
+vendor/lib/camera/liblg_awb_param_sl556w_video.so
+vendor/lib/camera/liblg_awb_param_sl846f_preview.so
+vendor/lib/camera/liblg_awb_param_sl846f_video.so
 vendor/lib/camera/titan17x_usecases.bin
 vendor/lib/lib.com.lge.elvis.so
 vendor/lib/libSNPE.so
@@ -204,19 +198,16 @@ vendor/lib/camera/components/com.qtistatic.stats.awb.so
 vendor/lib/camera/components/com.qtistatic.stats.pdlib.so
 
 # Camera - configs
-vendor/etc/camera/iqm/fc4_awb.dlc
 vendor/etc/camera/iqm/ai_checker_graph.dlc
 vendor/etc/camera/iqm/fc4_awb.dlc
 vendor/etc/camera/iqm/gender_detection_graph.dlc
 
 # Camera - Sensor
-vendor/lib/camera/com.qti.sensor.hi1634.so
 vendor/lib/camera/com.qti.sensor.s5kgm2.so
 vendor/lib/camera/com.qti.sensor.sl556.so
 vendor/lib/camera/com.qti.sensor.sl846.so
 
 # Camera - Sensormodule
-vendor/lib/camera/com.qti.sensormodule.hi1634.bin
 vendor/lib/camera/com.qti.sensormodule.s5kgm2.bin
 vendor/lib/camera/com.qti.sensormodule.sl556.bin
 vendor/lib/camera/com.qti.sensormodule.sl846.bin
@@ -224,13 +215,12 @@ vendor/lib/camera/com.qti.sensormodule.sl846.bin
 # Camera - tuned
 vendor/etc/camera/camera_tune_config.xml
 vendor/lib/camera/com.qti.tuned.default.bin
-vendor/lib/camera/com.qti.tuned.hi1634.bin
 vendor/lib/camera/com.qti.tuned.s5kgm2.bin
 vendor/lib/camera/com.qti.tuned.sl556.bin
 vendor/lib/camera/com.qti.tuned.sl846.bin
 
 # Firmware (Audio)
-vendor/firmware/tfa98xx.cnt
+vendor/firmware/Tfa9872.cnt
 
 # Firmware (Bluetooth)
 vendor/firmware/crbtfw21.tlv
@@ -239,48 +229,45 @@ vendor/firmware/crnv21.bin
 # Firmware (Camera)
 vendor/firmware/CAMERA_ICP.elf
 
-# Firmware (Camera - OIS)
-vendor/lib/camera/fw/bu24235_dl_program_JUDY_JOAN_LGITAct_ICG1020S_rev0_S_data1.bin
-vendor/lib/camera/fw/bu24235_dl_program_JUDY_JOAN_LGITAct_ICG1020S_rev0_S_data2.bin
-vendor/lib/camera/fw/bu24235_dl_program_Judy_LGITAct_ICG1020S_rev0_S_data1.bin
-vendor/lib/camera/fw/bu24235_dl_program_Judy_LGITAct_ICG1020S_rev0_S_data2.bin
-vendor/lib/camera/fw/bu24235_dl_program_Judy_emma_LGIT_ICG1020S_rev1_S_data1.bin
-vendor/lib/camera/fw/bu24235_dl_program_Judy_emma_LGIT_ICG1020S_rev1_S_data2.bin
-
 # Firmware (FFU)
+vendor/ffu/FFUMICRON_MT128GASAO4U21_0105.bin
+vendor/ffu/FFUMICRON_MT128GASAO4U21_0107.bin
+vendor/ffu/FFUSAMSUNG_KLUDG4U1EA-B0C1_0500.bin
+vendor/ffu/FFUSAMSUNG_KLUDG8V1EE-B0C1_0400.bin
+vendor/ffu/FFUSKHYNIX_H28S7Q302BMR_A002.bin
+vendor/ffu/FFUSKHYNIX_H28U62301AMR_D003.bin
+vendor/ffu/FFUSKHYNIX_H28U72301CMR_0004.bin
+vendor/ffu/FFUSKHYNIX_H28U74303AMR_D003.bin
+vendor/ffu/FFUTOSHIBA_THGAF8G9T43BAIRB_0300.bin
 vendor/ffu/FFUWDC_SDINDDH4-128G_1308.bin
 vendor/ffu/FFUWDC_SDINDDH4-256G_1308.bin
-vendor/ffu/FFUWDC_SDINEDK4-128G_1094.bin
-vendor/ffu/FFUWDC_SDINEDK4-256G_1088.bin
-
-# Firmware (NFC)
-vendor/firmware/libpn557_fw.so:vendor/lib/libpn557_fw.so
-vendor/firmware/libpn557_fw_64.so:vendor/lib64/libpn557_fw_64.so
+vendor/ffu/FFUWDC_SDINEDK4-128G_1082.bin
+vendor/ffu/FFUWDC_SDINEDK4-256G_1082.bin
 
 # Firmware (Wifi)
 vendor/etc/wifi/bdwlan.bin
 vendor/etc/wifi/bdwlan_ch0.bin
 vendor/etc/wifi/bdwlan_ch1.bin
-vendor/etc/wifi/icm.conf
 vendor/etc/wifi/icudt53l.dat
 
 # Fingerprint
-vendor/bin/hw/vendor.lge.hardware.biometrics.fingerprint@2.2-service-debug
-vendor/etc/init/vendor.lge.hardware.biometrics.fingerprint@2.2-service-debug.rc
-vendor/etc/vintf/manifest/vendor.lge.hardware.biometrics.fingerprint@2.2-service.xml
-vendor/lib64/hw/fingerprint.sdm845.so
+vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/libRbsFlow.so
 vendor/lib64/libets_teeclient_v2.so
-vendor/lib64/libfpsph.so
-vendor/lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so
-vendor/lib64/vendor.lge.hardware.biometrics.fingerprint@2.2.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Keymaster
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
 
 # QDCM calibration data
-vendor/etc/qdcm_calib_data_SW43103_cmd_mode_dsc_dsi_panel.xml
+vendor/etc/qdcm_calib_data_Dual_nt35597_cmd_mode_dsi_truly_panel_without_DSC.xml
+vendor/etc/qdcm_calib_data_Dual_nt35597_video_mode_dsi_truly_panel_without_DSC.xml
+vendor/etc/qdcm_calib_data_Dual_nt36850_cmd_mode_dsi_truly_panel_without_DSC.xml
+vendor/etc/qdcm_calib_data_SW43410_cmd_mode_dsc_dsi_panel.xml
+vendor/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml
+vendor/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml
+vendor/etc/qdcm_calib_data_hx8399_video_mode_dsi_truly_panel.xml
+vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml
 
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
@@ -309,24 +296,20 @@ vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
-vendor/lib64/sensors.sar.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Sensors (LGE)
 vendor/lib64/libsensor_lge_cal.so
-vendor/lib64/libsensor_lge_hd_cal.so
 
 # Sensors configs
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/registry/config/ak991x_dri_0.json
+vendor/etc/sensors/registry/config/apds9999.json
 vendor/etc/sensors/registry/config/etc_version
 vendor/etc/sensors/registry/config/icm4x6xx_0.json
-vendor/etc/sensors/registry/config/icp101xx_0.json
-vendor/etc/sensors/registry/config/lito_apds9159.json
-vendor/etc/sensors/registry/config/lito_apds9159_revB.json
-vendor/etc/sensors/registry/config/lito_icp101xx_0.json
 vendor/etc/sensors/registry/config/sdm845_ak991x_0.json
+vendor/etc/sensors/registry/config/sdm845_apds9999_0.json
 vendor/etc/sensors/registry/config/sdm845_icm4x6xx_0.json
 vendor/etc/sensors/registry/config/sdm845_power_0.json
 vendor/etc/sensors/registry/config/sensors_list.txt
@@ -361,12 +344,3 @@ vendor/etc/sensors/registry/registry/sensors_registry
 vendor/etc/sensors/registry/registry/sensors_settings
 vendor/etc/sensors/registry/sns_reg_config
 vendor/etc/sensors/sns_reg_config
-
-# Trustonic TEE
-vendor/bin/mcDriverDaemon
-vendor/bin/hw/vendor.trustonic.tee@1.1-service
-vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
-vendor/etc/init/vendor.trustonic.tee@1.1-service.rc
-vendor/lib64/libMcClient.so
-vendor/lib64/vendor.trustonic.tee@1.0.so
-vendor/lib64/vendor.trustonic.tee@1.1.so

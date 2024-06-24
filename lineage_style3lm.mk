@@ -21,8 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Indicate the first api level the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 29
 
-# Inherit from caymanslm device
-$(call inherit-product, device/lge/caymanslm/device.mk)
+# Inherit from style3lm device
+$(call inherit-product, device/lge/style3lm/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -31,20 +31,20 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Device identifiers
-PRODUCT_NAME := lineage_caymanslm
-PRODUCT_DEVICE := caymanslm
+PRODUCT_NAME := lineage_style3lm
+PRODUCT_DEVICE := style3lm
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
-PRODUCT_RELEASE_NAME := VELVET
+PRODUCT_RELEASE_NAME := Style3
 
 PRODUCT_GMS_CLIENTID_BASE := android-lge
 
-TARGET_VENDOR_PRODUCT_NAME := caymanslm
-TARGET_VENDOR_DEVICE_NAME := caymanslm
+TARGET_VENDOR_PRODUCT_NAME := style3lm
+TARGET_VENDOR_DEVICE_NAME := style3lm
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=caymanslm \
-    PRODUCT_NAME=caymanslm \
-    PRIVATE_BUILD_DESC="caymanslm-user 12 SKQ1.211103.001 231250317a5f6 release-keys"
+    TARGET_DEVICE=L-41A \
+    PRODUCT_NAME=style3lm_dcm_jp \
+    PRIVATE_BUILD_DESC="style3lm_dcm_jp-user 10 QKQ1.200308.002 2012901066540 release-keys"
 
-BUILD_FINGERPRINT := "lge/caymanslm/caymanslm:12/SKQ1.211103.001/231250317a5f6:user/release-keys"
+BUILD_FINGERPRINT := "lge/style3lm_dcm_jp/L-41A:10/QKQ1.200308.002/2012901066540:user/release-keys"
