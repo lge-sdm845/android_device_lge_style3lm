@@ -26,7 +26,7 @@
 <!--- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN    -->
 <!--- IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                             -->
 <sound_trigger_platform_info>
-    <param version="0x0103" /> <!-- this must be the first param -->
+    <param version="0x0105" /> <!-- this must be the first param -->
 <!--- Version History:                                                          -->
 <!--- 0x0101: Legacy version.                                                   -->
 <!--- 0x0102: Includes acdb_ids param with the gcs_usecase tag. This matches    -->
@@ -35,6 +35,7 @@
 <!--- added to <adm_config>                                                     -->
 
     <common_config>
+        <param implementer_version="0x0100" />
         <param max_cpe_sessions="1" />
         <param max_wdsp_sessions="2" />
         <param max_ape_sessions="8" />
@@ -50,6 +51,9 @@
         <param backend_dai_name="SLIMBUS_3_TX" />
         <!-- Param used to indicate if SVA has dedicated SLIM ports -->
         <param dedicated_sva_path="false" />
+        <param concurrent_capture="false" />
+        <param concurrent_voice_call="false" />
+        <param concurrent_voip_call="false" />
     </common_config>
     <acdb_ids>
         <param DEVICE_HANDSET_MIC_APE="100" />
@@ -80,38 +84,45 @@
 
         <!-- adm_cfg_profile should match with the one defined under adm_config -->
         <!-- Set it to NONE if LSM directly connects to AFE -->
-        <param adm_cfg_profile="FLUENCE_STEREO" />
+        <param adm_cfg_profile="FLUENCE" />
         <!-- fluence_type: "FLUENCE", "FLUENCE_DMIC", "FLUENCE_TMIC", -->
         <!-- "FLUENCE_QMIC". param value is valid when adm_cfg_profile="FLUENCE"-->
         <param fluence_type="FLUENCE_DMIC" />
         <!-- wdsp_fluence_type: fluence disabled: "NONE" -->
         <!-- fluence enabled: "FLUENCE_DMIC", "FLUENCE_TMIC", "FLUENCE_QMIC" -->
         <param wdsp_fluence_type="FLUENCE_DMIC" />	
+        <arm_ss_usecase>
+            <!-- Options are "KEYWORD_DETECTION", "USER_VERIFICATION", "CUSTOM_DETECTION"  -->
+            <param sm_detection_type= "KEYWORD_DETECTION" />
+            <param sm_id="0x2" />
+            <param module_lib="libcapiv2svacnn.so"/>
+            <param sample_rate="16000"/>
+            <param bit_wdith="16"/>
+            <param channel_count="1"/>
+        </arm_ss_usecase>
+        <arm_ss_usecase>
+            <param sm_detection_type= "USER_VERIFICATION" />
+            <param sm_id="0x4" />
+            <param module_lib="libcapiv2vop.so"/>
+            <param sample_rate="16000"/>
+            <param bit_wdith="16"/>
+            <param channel_count="1"/>
+        </arm_ss_usecase>
         <gcs_usecase>
             <param uid="0x5" />
-            <param acdb_devices="DEVICE_HANDSET_DMIC_CPE" />
+            <param acdb_devices="DEVICE_HANDSET_DMIC_CPE,DEVICE_HANDSET_MIC_CPE" />
             <param load_sound_model_ids="0x00012C0D, 0x6, 0x00012C14" />
             <param confidence_levels_ids="0x00012C0D, 0x6, 0x00012C28" />
-            <param detection_event_ids="0x00012C0D, 0x6, 0x00012C29" />
+            <param detection_event_ids="0x00012C0D, 0x6, 0x00012B05" />
             <param read_cmd_ids="0x00020013, 0x6, 0x00020015" />
             <param read_rsp_ids="0x00020013, 0x6, 0x00020016" />
             <param custom_config_ids="0x00012C0D, 0x6, 0x00012C20" />
+            <param det_event_type_ids="0x00012C0D, 0x6, 0x00012C2A" />
         </gcs_usecase>
         <!-- Module and param ids with which the algorithm is integrated
             in non-graphite firmware (note these must come after gcs params)
             Extends flexibility to have different ids based on execution type.
             valid execution_type values: "WDSP" "ADSP" -->
-        <lsm_usecase>
-            <param execution_mode="ADSP" />
-            <param app_type="2" /> <!-- app type used in ACDB -->
-            <param in_channels="2"/> <!-- Module input channels -->
-            <param load_sound_model_ids="0x00012C0D, 0x00012C14" />
-            <param unload_sound_model_ids="0x00012C0D, 0x00012C15" />
-            <param confidence_levels_ids="0x00012C0D, 0x00012C07" />
-            <param operation_mode_ids="0x00012C0D, 0x00012C02" />
-            <param polling_enable_ids="0x00012C0D, 0x00012C1B" />
-            <param custom_config_ids="0x00012C0D, 0x00012C20" />
-        </lsm_usecase>
 
         <!-- format: "ADPCM_packet" or "PCM_packet" !-->
         <!-- transfer_mode: "FTRT" or "RT" -->
@@ -158,17 +169,6 @@
             in non-graphite firmware (note these must come after gcs params)
             Extends flexibility to have different ids based on execution type.
             valid execution_type values: "WDSP" "ADSP" -->
-        <lsm_usecase>
-            <param execution_mode="ADSP" />
-            <param app_type="3" /> <!-- app type used in ACDB -->
-            <param in_channels="2"/> <!-- Module input channels -->
-            <param load_sound_model_ids="0x18000001, 0x00012C14" />
-            <param unload_sound_model_ids="0x18000001, 0x00012C15" />
-            <param confidence_levels_ids="0x18000001, 0x00012C07" />
-            <param operation_mode_ids="0x18000001, 0x00012C02" />
-            <param polling_enable_ids="0x18000001, 0x00012C1B" />
-            <param custom_config_ids="0x18000001, 0x00012C20" />
-        </lsm_usecase>
 
         <!-- format: "ADPCM_packet" or "PCM_packet" !-->
         <!-- transfer_mode: "FTRT" or "RT" -->

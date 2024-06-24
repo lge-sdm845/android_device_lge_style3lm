@@ -22,7 +22,7 @@ fi
 
 set -e
 
-export DEVICE=caymanslm
+export DEVICE=style3lm
 export DEVICE_COMMON=sdm845-common
 export VENDOR=lge
 export VENDOR_COMMON=${VENDOR}

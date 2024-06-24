@@ -27,8 +27,10 @@ volume index from 0 to 100.
                                              ref="DEFAULT_VOIP_VOLUME_CURVE"/>
     <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_SPEAKER"
                                              ref="DEFAULT_VOIP_VOLUME_CURVE"/>
-    <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_EARPIECE"
-                                             ref="DEFAULT_VOIP_VOLUME_CURVE"/>
+    <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_EARPIECE">
+        <point>0,-2050</point>
+        <point>100,0</point>
+    </volume>
     <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
                                              ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
     <volume stream="AUDIO_STREAM_SYSTEM" deviceCategory="DEVICE_CATEGORY_HEADSET"
@@ -64,7 +66,7 @@ volume index from 0 to 100.
     <volume stream="AUDIO_STREAM_ALARM" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
                                         ref="DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE"/>
     <volume stream="AUDIO_STREAM_NOTIFICATION" deviceCategory="DEVICE_CATEGORY_HEADSET"
-                                               ref="NOTIFICATION_ONLY_HEADSET_VOLUME_CURVE"/>
+                                               ref="DEFAULT_DEVICE_CATEGORY_HEADSET_VOLUME_CURVE"/>
     <volume stream="AUDIO_STREAM_NOTIFICATION" deviceCategory="DEVICE_CATEGORY_SPEAKER" 
                                                ref="DRC_SPK_ATTN_COMBO_CURVE"/>
     <volume stream="AUDIO_STREAM_NOTIFICATION" deviceCategory="DEVICE_CATEGORY_EARPIECE"
@@ -153,24 +155,31 @@ volume index from 0 to 100.
     <reference name="DRC_SPK_ATTN_COMBO_CURVE">
     <!-- DRC SPK RING NOTI ALARM CURVE -->
         <point>1,-3700</point>
-        <point>35,-2700</point>  <!-- 35, -2800 -> 35, -2700 -->
-        <point>65,-1800</point>  <!-- 65, -2000 -> 65, -1800 -->
-        <point>80,-1200</point>  <!-- 80, -1400 -> 80, -1200 -->
-        <point>100,-350</point>  <!-- 100, -450 -> 100, -350 -->
+        <point>35,-2800</point>
+        <point>65,-2000</point>
+        <point>80,-1400</point>
+        <point>100,-450</point>
     </reference>
     <reference name="DRC_SPK_ATTN_MEDIA_CURVE">
     <!--DRC SPK MEDIA CURVE -->
-        <point>1,-5400</point>  <!-- 1, -5400 -> 1, -5200 -> -5400 -->
-        <point>66,-2000</point> <!-- 60, -2000 -> 66, -2100 -> -1700 -> -1900 -> -1950 --> 
-        <point>75,-1400</point> <!-- 75, -1800 added -> 75, -1300 -> -1500 -> -1450 -->
-        <point>85,-800</point> <!-- 85, -900 -> 85, -1000 -> -950 -> -1050 -> -950 -->
-        <point>93,-400</point>  <!-- 93, -400 -> 93, -500 -> -600 -> -700 -> -400 --> 
+        <point>1,-5600</point>
+        <point>60,-1900</point>
+        <point>85,-650</point>
+        <point>93,-300</point>
         <point>100,0</point>
     </reference>
 
     <!-- **************************************************************** -->
     <!-- Non-mutable lge volume curves:                               -->
     <!--     * first point is always for index 0                          -->
+    <reference name="NON_MUTABLE_ALARM_DRC_SPK_ATTN_COMBO_CURVE">
+    <!-- DRC SPK ALARM CURVE -->
+        <point>0,-3700</point>
+        <point>35,-2800</point>
+        <point>65,-2000</point>
+        <point>80,-1400</point>
+        <point>100,-450</point>
+    </reference>
     <reference name="NON_MUTABLE_ACCESSIBILITY_VOLUME_CURVE">
     <!-- Accessibility Volume Curve for headset-->
         <point>0,-4800</point>
@@ -185,14 +194,6 @@ volume index from 0 to 100.
         <point>60,-2700</point>
         <point>85,-1300</point>
         <point>100,0</point>
-    </reference>
-    <reference name="NOTIFICATION_ONLY_HEADSET_VOLUME_CURVE">
-    <!-- Headset only NOTI CURVE Based on DRC_SPK_ATTN_COMBO_CURVE -->
-        <point>1,-3700</point>
-        <point>35,-2800</point>
-        <point>65,-2000</point>
-        <point>80,-1400</point>
-        <point>100,-450</point>
     </reference>
 </volumes>
 

@@ -16,8 +16,8 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-DEVICE_PATH := device/lge/caymanslm
-DEVICE_NAME := caymanslm
+DEVICE_PATH := device/lge/style3lm
+DEVICE_NAME := style3lm
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Include from common device configuration
@@ -44,8 +44,8 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.caymanslm:$(TARGET_COPY_OUT_RAMDISK)/fstab.caymanslm \
-    $(DEVICE_PATH)/rootdir/etc/fstab.caymanslm:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.caymanslm
+    $(DEVICE_PATH)/rootdir/etc/fstab.style3lm:$(TARGET_COPY_OUT_RAMDISK)/fstab.style3lm \
+    $(DEVICE_PATH)/rootdir/etc/fstab.style3lm:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.style3lm
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -61,7 +61,7 @@ PRODUCT_PACKAGES += \
 
 # Wi-Fi Overlay
 PRODUCT_PACKAGES += \
-    WifiOverlayVELVET
+    WifiOverlayStyle3
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/lge/caymanslm/caymanslm-vendor.mk)
+$(call inherit-product, vendor/lge/style3lm/style3lm-vendor.mk)

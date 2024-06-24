@@ -1,18 +1,17 @@
 #
-# vendor props for caymanslm
+# vendor props for style3lm
 #
 
 # Bluetooth
-bluetooth.device.default_name=LG VELVET
+bluetooth.device.default_name=LG Style3
 
 # Camera
-ro.vendor.lge.aux.camera=1
+ro.vendor.lge.aux.camera=0
 
 # Misc
-ro.vendor.lge.build.target_country=COM
-ro.vendor.lge.build.target_operator=LAO
-ro.vendor.lge.capp_cupss.rootdir=/product
-ro.vendor.lge.swversion=G91030l
+ro.vendor.lge.build.target_operator=DCM
+ro.vendor.lge.build.target_country=JP
+ro.vendor.lge.swversion=L41A10c
 
 # USB
-vendor.usb.product_string=LG VELVET
+vendor.usb.product_string=LG Style3
