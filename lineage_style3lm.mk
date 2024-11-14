@@ -43,8 +43,6 @@ TARGET_VENDOR_PRODUCT_NAME := style3lm
 TARGET_VENDOR_DEVICE_NAME := style3lm
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=L-41A \
-    PRODUCT_NAME=style3lm_dcm_jp \
-    PRIVATE_BUILD_DESC="style3lm_dcm_jp-user 10 QKQ1.200308.002 2012901066540 release-keys"
-
-BUILD_FINGERPRINT := "lge/style3lm_dcm_jp/L-41A:10/QKQ1.200308.002/2012901066540:user/release-keys"
+    DeviceName=style3lm_dcm_jp \
+    BuildDesc="style3lm_dcm_jp-user 10 QKQ1.200308.002 2012901066540 release-keys" \
+    BuildFingerprint=lge/style3lm_dcm_jp/L-41A:10/QKQ1.200308.002/2012901066540:user/release-keys
