@@ -8,6 +8,9 @@ bluetooth.device.default_name=LG Style3
 # Camera
 ro.vendor.lge.aux.camera=0
 
+# Fingerprint
+persist.vendor.fingerprint.type=rear
+
 # Misc
 ro.vendor.lge.build.target_operator=DCM
 ro.vendor.lge.build.target_country=JP
