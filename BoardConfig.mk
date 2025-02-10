@@ -29,9 +29,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 BOARD_KERNEL_CMDLINE += androidboot.hardware=style3lm androidboot.fstab_suffix=style3lm
 TARGET_KERNEL_CONFIG := lineageos_style3lm_defconfig
 
-# Lights
-$(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,$(DEVICE_PATH)/include)
-
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
