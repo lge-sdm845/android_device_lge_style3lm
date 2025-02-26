@@ -65,6 +65,7 @@ vendor/etc/acdbdata/Speaker_cal.acdb
 
 # Camera
 vendor/lib/hw/camera.sdm845.so
+vendor/lib/hw/com.qti.chi.override.so
 vendor/lib/libAutoContrast.so
 vendor/lib/libSJVideoNR.so
 vendor/lib/libVDRTStereoDepth.so
@@ -89,9 +90,6 @@ vendor/lib/libmorpho_wdr2.so
 vendor/lib/libmpbase.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
-
-# Camera - patched to fix buffer issue
-vendor/lib/hw/com.qti.chi.override.so|de4248c89864cfd676522fe8bd19aa03d4a2bf3e
 
 # Camera - Automatic white-balance and exposure
 vendor/lib/camera/fdconfigpreview.bin
