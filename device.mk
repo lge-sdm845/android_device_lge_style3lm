@@ -47,6 +47,12 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/etc/fstab.style3lm:$(TARGET_COPY_OUT_RAMDISK)/fstab.style3lm \
     $(DEVICE_PATH)/rootdir/etc/fstab.style3lm:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.style3lm
 
+# NFC
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/nfc/libnfc-cxd-RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-cxd-RF.conf \
+    $(DEVICE_PATH)/nfc/libnfc-cxd22xx.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-cxd22xx.conf \
+    $(DEVICE_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.hifi_sensors.xml
