@@ -26,7 +26,11 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib/liblgdnnsnpe.so',
         'vendor/lib/libSNPE.so'
     ): blob_fixup()
-        .replace_needed('libstdc++.so', 'libstdc++_vendor.so')
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+        'vendor/lib/hw/camera.sdm845.so': blob_fixup()
+        .replace_needed('libprotobuf-cpp-full-3.9.1.so', 'libprotobuf-cpp-full-3.9.1-vendorcompat.so'),
+        'vendor/lib/libsnsapi.so': blob_fixup()
+        .replace_needed('libprotobuf-cpp-lite-3.9.1.so', 'libprotobuf-cpp-lite-3.9.1-vendorcompat.so'),
 }  # fmt: skip
 
 

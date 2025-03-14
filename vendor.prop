@@ -11,7 +11,7 @@ ro.vendor.lge.aux.camera=0
 # Misc
 ro.vendor.lge.build.target_operator=DCM
 ro.vendor.lge.build.target_country=JP
-ro.vendor.lge.swversion=L41A10c
+ro.vendor.lge.swversion=L41A20c
 
 # USB
 vendor.usb.product_string=LG Style3

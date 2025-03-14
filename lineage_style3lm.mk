@@ -44,5 +44,5 @@ TARGET_VENDOR_DEVICE_NAME := style3lm
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=style3lm \
-    BuildDesc="style3lm_dcm_jp-user 10 QKQ1.200308.002 2012901066540 release-keys" \
-    BuildFingerprint=lge/style3lm_dcm_jp/L-41A:10/QKQ1.200308.002/2012901066540:user/release-keys
+    BuildDesc="style3lm_dcm_jp-user 11 RKQ1.210420.001 213120913f557 release-keys" \
+    BuildFingerprint=lge/style3lm_dcm_jp/L-41A:11/RKQ1.210420.001/213120913f557:user/release-keys

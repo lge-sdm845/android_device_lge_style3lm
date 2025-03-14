@@ -1,10 +1,10 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from L41A10c (QKQ1.200308.002).
+## are from L41A20c (RKQ1.210420.001).
 
 # Current blobs with ELF checks disabled:
 #
 # The following depend on compiler intrinsic symbols that are not exported:
-# com.lge.node.{elpis,elvis,lavis}, com.lge.stats.af{,_core}, com.qti.chi.override, com.qti.node.memcpy, liblgae_main, libmmcamera_faceproc
+# com.lge.node.{elpis,elvis,lavis}, com.lge.stats.af{,_core}, com.qti.chi.override, com.qti.node.memcpy, liblgae_main, libmmcamera_faceproc, libets_teeclient_v2
 
 # ADSP
 vendor/bin/chre
@@ -40,7 +40,6 @@ vendor/lib/rfsa/adsp/libVC1Dec.so
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libcamera_nn_skel.so
-vendor/lib/rfsa/adsp/libcvpdsp_skel.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so
 vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
@@ -48,7 +47,6 @@ vendor/lib/rfsa/adsp/libdsp_streamer_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
@@ -234,10 +232,14 @@ vendor/firmware/crnv21.bin
 vendor/firmware/CAMERA_ICP.elf
 
 # Firmware (FFU)
-vendor/ffu/FFUMICRON_MT128GASAO4U21_0105.bin
 vendor/ffu/FFUMICRON_MT128GASAO4U21_0107.bin
+vendor/ffu/FFUMICRON_MT128GASAO4U21_0108.bin
 vendor/ffu/FFUSAMSUNG_KLUDG4U1EA-B0C1_0500.bin
+vendor/ffu/FFUSAMSUNG_KLUDG4UHDC-B0E1_0200.bin
 vendor/ffu/FFUSAMSUNG_KLUDG8V1EE-B0C1_0400.bin
+vendor/ffu/FFUSAMSUNG_KLUEG8UHDC-B0E1_0200.bin
+vendor/ffu/FFUSAMSUNG_KM2V8001CM-B707_2100.bin
+vendor/ffu/FFUSAMSUNG_KM8V8001JM-B813_2100.bin
 vendor/ffu/FFUSKHYNIX_H28S7Q302BMR_A002.bin
 vendor/ffu/FFUSKHYNIX_H28U62301AMR_D003.bin
 vendor/ffu/FFUSKHYNIX_H28U72301CMR_0004.bin
@@ -245,8 +247,11 @@ vendor/ffu/FFUSKHYNIX_H28U74303AMR_D003.bin
 vendor/ffu/FFUTOSHIBA_THGAF8G9T43BAIRB_0300.bin
 vendor/ffu/FFUWDC_SDINDDH4-128G_1308.bin
 vendor/ffu/FFUWDC_SDINDDH4-256G_1308.bin
-vendor/ffu/FFUWDC_SDINEDK4-128G_1082.bin
-vendor/ffu/FFUWDC_SDINEDK4-256G_1082.bin
+vendor/ffu/FFUWDC_SDINEDK4-128G_1094.bin
+vendor/ffu/FFUWDC_SDINEDK4-256G_1088.bin
+
+# Firmware (NFC)
+vendor/firmware/cxd225x_firmware.bin
 
 # Firmware (Wifi)
 vendor/etc/wifi/bdwlan.bin
@@ -256,11 +261,16 @@ vendor/etc/wifi/icudt53l.dat
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.sdm845.so;FIX_SONAME
+vendor/lib64/libfpsph.so
 vendor/lib64/libRbsFlow.so
-vendor/lib64/libets_teeclient_v2.so
+vendor/lib64/libets_teeclient_v2.so;DISABLE_CHECKELF
 
 # Keymaster
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
+
+# NFC
+vendor/bin/hw/android.hardware.nfc@1.2-service-cxd22xx
+vendor/etc/init/android.hardware.nfc@1.2-service-cxd22xx.rc
 
 # QDCM calibration data
 vendor/etc/qdcm_calib_data_Dual_nt35597_cmd_mode_dsi_truly_panel_without_DSC.xml
@@ -272,6 +282,15 @@ vendor/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_hx8399_video_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml
+# Res Control
+vendor/bin/hw/vendor.lge.hardware.powerhint.rescontrol@2.0-service
+vendor/etc/init/vendor.lge.hardware.powerhint.rescontrol@2.0-service.rc
+vendor/lib/libvendor_rescontrol.so
+vendor/lib/vendor.lge.hardware.powerhint.rescontrol@2.0-common.so
+vendor/lib/vendor.lge.hardware.powerhint.rescontrol@2.0.so
+vendor/lib64/libvendor_rescontrol.so
+vendor/lib64/vendor.lge.hardware.powerhint.rescontrol@2.0-common.so
+vendor/lib64/vendor.lge.hardware.powerhint.rescontrol@2.0.so
 
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
@@ -291,12 +310,14 @@ vendor/lib/libssc_default_listener.so
 vendor/lib/sensors.ssc.so
 vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib64/libnanopb.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsnsapi.so
+vendor/lib64/libsns_api.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
