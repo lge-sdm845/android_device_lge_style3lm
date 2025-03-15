@@ -16,11 +16,8 @@
 
 DEVICE_PATH := device/lge/style3lm
 
-# Partitions
-BOARD_SUPER_PARTITION_SIZE := 17179869184
-
 # Inherit from common device tree
-include device/lge/sdm845-common/BoardConfigCommon.mk
+include device/lge/sdm845-common/BoardConfigDynamic.mk
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
@@ -31,6 +28,9 @@ TARGET_KERNEL_CONFIG := lineageos_style3lm_defconfig
 
 # Lights
 $(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,$(DEVICE_PATH)/include)
+
+# Partitions
+BOARD_SUPER_PARTITION_SIZE := 17179869184
 
 # inherit from the proprietary version
 include vendor/lge/style3lm/BoardConfigVendor.mk
