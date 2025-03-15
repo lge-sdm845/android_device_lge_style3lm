@@ -20,7 +20,7 @@ DEVICE_PATH := device/lge/style3lm
 BOARD_SUPER_PARTITION_SIZE := 17179869184
 
 # Inherit from common device tree
-include device/lge/sdm845-common/BoardConfigCommon.mk
+include device/lge/sdm845-common/BoardConfigDynamic.mk
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
