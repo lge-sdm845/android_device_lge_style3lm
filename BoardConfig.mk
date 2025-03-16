@@ -32,5 +32,9 @@ TARGET_KERNEL_CONFIG := lineageos_style3lm_defconfig
 # Lights
 $(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,$(DEVICE_PATH)/include)
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # inherit from the proprietary version
 include vendor/lge/style3lm/BoardConfigVendor.mk
