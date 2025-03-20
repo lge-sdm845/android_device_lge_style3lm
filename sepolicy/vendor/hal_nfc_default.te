@@ -1,0 +1,1 @@
+allow hal_nfc_default persist_lg_data_file:file { getattr open read };

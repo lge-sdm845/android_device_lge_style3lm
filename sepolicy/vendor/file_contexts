@@ -1,0 +1,8 @@
+# Devices
+/dev/cxd22xx-i2c          u:object_r:nfc_device:s0
+
+# HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.2-service-cxd22xx                              u:object_r:hal_nfc_default_exec:s0
+
+# Persist files
+/mnt/vendor/persist-lg/felica(/.*)?                     u:object_r:persist_lg_data_file:s0
