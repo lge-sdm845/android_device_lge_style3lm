@@ -1,0 +1,21 @@
+## All proprietary firmware from this list, unless pinned and noted otherwise,
+## are from L41A20c (RKQ1.210420.001).
+
+abl.img;AB
+akmu.img;AB
+aop.img;AB
+cmnlib.img;AB
+cmnlib64.img;AB
+devcfg.img;AB
+dsp.img;AB
+hyp.img;AB
+keymaster.img;AB
+laf.img;AB
+mdtp.img;AB
+mdtpsecapp.img;AB
+modem.img;AB
+qupfw.img;AB
+storsec.img;AB
+tz.img;AB
+xbl.img;AB
+xbl_config.img;AB
