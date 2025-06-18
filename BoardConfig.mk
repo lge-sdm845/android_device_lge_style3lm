@@ -19,6 +19,9 @@ DEVICE_PATH := device/lge/style3lm
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 17179869184
 
+# Audio
+BOARD_LGE_HAS_EXT_AMPLIFIER := true
+
 # Inherit from common device tree
 include device/lge/sdm845-common/BoardConfigDynamic.mk
 
