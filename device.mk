@@ -46,7 +46,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_COPY_FILES += \
-    device/lge/sdm845-common/rootdir/etc/fstab.dynamic:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.style3lm \
+    device/lge/sdm845-common/rootdir/etc/fstab.dynamic:$(TARGET_COPY_OUT_RAMDISK)/fstab.style3lm \
     device/lge/sdm845-common/rootdir/etc/fstab.dynamic:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.style3lm
 
 # NFC
